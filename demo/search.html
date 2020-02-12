@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/f-ui.css">
+</head>
+<body>
+<div class="f-content">
+  <!-- 带suggest的搜索框 -->
+  <div class="f-search">
+    <!-- 搜索框 -->
+    <!--    带有 action 属性的表单里包含的 input 元素，
+    这样的结构就会被输入法认定为表单的功能，会在键盘上显示出“前往”的按钮-->
+    <form class="f-search-form" action="#">
+      <div class="f-search-input-wrap">
+        <i class="fa fa-search f-search-icon"></i>
+        <input type="text" class="f-search-input" placeholder="搜索" autocomplete="off" required>
+        <i class="fa fa-close f-search-clear"></i>
+      </div>
+      <span class="f-search-cancel">取消</span>
+    </form>
+    <!-- 搜索建议 -->
+    <ul class="f-search-suggest">
+      <li class="f-suggest-item">手机</li>
+      <li class="f-suggest-item">iPhone XS Max</li>
+      <li class="f-suggest-item">华为P30</li>
+      <li class="f-suggest-item">小米 MIX3</li>
+      <li class="f-suggest-item">诺基亚1110</li>
+    </ul>
+  </div>
+  <p class="content">内容区</p>
+</div>
+</body>
+</html>
