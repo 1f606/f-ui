@@ -1,0 +1,44 @@
+/*
+ * @Author: 1f606
+ * @Date: 2020-02-11 21:00:00
+ * @Last Modified by: 1f606
+ * @Last Modified time: 2020-02-11 21:00:00
+ */
+
+/* 头部导航条 */
+.f-header{
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    top: 0;
+    z-index: 200;
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8;
+}
+/*这里面没有使用“left: 0;”来把标题栏放在窗口最左面，
+这是因为如果不给它限定水平方向位置，那么它起始的位置就时它脱离文档流之前的位置，也就是现在 body 的起始位置。
+这样在超宽屏幕下也能保证标题栏也在 body 的左上角，而不是屏幕的左上角。*/
+
+/* 左侧功能区 */
+.f-header > .left{
+    flex-basis: 4rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+/* 中间标题部分 */
+.f-header > .title{
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 右侧功能区 */
+.f-header > .right{
+    flex-basis: 4rem;
+    flex-shrink: 0;
+}

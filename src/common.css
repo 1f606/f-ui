@@ -1,0 +1,45 @@
+/*
+ * @Author: 1f606
+ * @Date: 2020-02-11 19:41:00
+ * @Last Modified by: 1f606
+ * @Last Modified time: 2020-02-11 21:09:00
+ */
+
+/* 屏幕宽度在340px至410px时，基准尺寸使用20px */
+html{
+    font-size: 20px;
+}
+/* 屏幕宽度小于340px时，基准尺寸使用18px */
+@media (max-width: 340px){
+    html{
+        font-size: 18px;
+    }
+}
+/* 屏幕宽度大于410px时，基准尺寸使用22px */
+@media (min-width: 410px){
+    html{
+        font-size: 22px;
+    }
+}
+
+/* body默认样式 */
+body{
+    max-width: 640px;
+    /*margin: 0 auto; 当屏幕超宽时，保证内容区能水平居中。*/
+    margin: 0 auto;
+    background: #f8f8f8;
+    /*横轴方向如果出现了超宽的元素，设置为隐藏，这样就能防止在X轴方向上出现滚动条。*/
+    overflow-x: hidden;
+    /*在 ios 系统上，可以让滚动元素带有弹性，滚动的更顺滑。*/
+    -webkit-overflow-scrolling: touch;
+}
+/* 页面蒙版 */
+.f-mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 300;
+}

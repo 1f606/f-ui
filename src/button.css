@@ -1,0 +1,56 @@
+/*
+ * @Author: 1f606
+ * @Date: 2020-02-12 12:22:00
+ * @Last Modified by: 1f606
+ * @Last Modified time: 2020-02-12 12:22:00
+ */
+
+.f-btn {
+    display: block;
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: .7rem;
+    text-align: center;
+    color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*防止因用户按住按钮太久而导致出现文本选择的选项*/
+    user-select:none;
+}
+/*定制主要按钮样式*/
+.f-btn.f-btn-primary {
+    background-color: #1AAD19;
+    color: #fff;
+}
+/*警示按钮样式*/
+.f-btn.f-btn-warning {
+    background-color: #E64340;
+    color: #fff;
+}
+/* 定制不可用按钮的样式 */
+.f-btn.f-btn-disabled {
+    background-color: #F7F7F7;
+    color: #999;
+    opacity: .6;
+}
+/* 大按钮 */
+.f-btn.f-btn-large{
+    width: 100%;
+    font-size: .9rem;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+/* 小按钮 */
+.f-btn.f-btn-small{
+    display: inline-block;
+    width: 3rem;
+    padding: .2rem 0;
+    font-size: .7rem;
+}
